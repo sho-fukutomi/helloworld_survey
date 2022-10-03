@@ -6,7 +6,7 @@ if(!empty($_POST['orderId']) || !empty($_POST['brand']) ){
 	$brand = "";
 	$orderId = "";
 }
-
+require('URL.php');
 $orderInfoAPIURL = $orderInfoAPI.$orderId; 
 
 //APIコール、ブランド名とブランドテキストを取得
@@ -50,7 +50,7 @@ foreach ($responce as $key => $value) {
 		<link rel="stylesheet" href="common.css">
 	</head>
 	<body>
-		<div>
+		<div class="container">
 			<div></div>
 			<div>商品を選択してください。</div>
 			<div>
@@ -60,7 +60,7 @@ foreach ($responce as $key => $value) {
 						foreach ($itemlist as $key => $value) {
 							echo '<div>';
 							echo '<label>';
-							echo '<input type="radio" name="item"value="'.$itemlist[$key]['json'].'">';
+							echo '<input type="radio" class="items" name="item"value="'.$itemlist[$key]['json'].'">';
 							echo $itemlist[$key]['title'].'</label>';
 							echo '</div>';
 						}  

@@ -1,5 +1,5 @@
 <?php 
-var_dump($_POST);
+// var_dump($_POST);
 
 if (!empty($_POST['item'])) {
 	$items = json_decode(base64_decode($_POST['item']));
@@ -9,7 +9,7 @@ if (!empty($_POST['item'])) {
 
 
 
-// var_dump($items);
+var_dump($items);
 $tempa['url'] = $items->url;
 $tempa['orderId'] = $items->oderId;
 $tempa['sku'] = $items->sku;
@@ -32,7 +32,7 @@ if(!empty($items->question5)){
 	$questions[4] = $items->question5;
 }
 
-
+$brandName = $tempa['brand'] ;
 // var_dump($questions);
 
 ?>
@@ -44,7 +44,7 @@ if(!empty($items->question5)){
 		<link rel="stylesheet" href="common.css">
 	</head>
 	<body>
-		<div>
+		<div class="container">
 			<div></div>
 			<div>質問にご回答ください</div>
 			<div>

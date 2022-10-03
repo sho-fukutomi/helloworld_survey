@@ -37,7 +37,7 @@ $brandName = $otherinfo->brand;
 		<link rel="stylesheet" href="common.css">
 	</head>
 	<body>
-		<div>
+		<div class="container">
 			<div></div>
 			<div>レビュー投稿にご協力ください。</div>
 			<div>レビューをよろしくお願いいたします。</div>
