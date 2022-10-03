@@ -7,9 +7,6 @@ if (!empty($_POST['item'])) {
 	echo "error";
 }
 
-
-
-var_dump($items);
 $tempa['url'] = $items->url;
 $tempa['orderId'] = $items->oderId;
 $tempa['sku'] = $items->sku;
@@ -46,34 +43,35 @@ $brandName = $tempa['brand'] ;
 	<body>
 		<div class="container">
 			<div></div>
-			<div>質問にご回答ください</div>
+			<h2>質問にご回答ください</h2>
 			<div>
 				<form method="post">
 					<div>
-						<div>
+						<div class="items">
 							<label>ギフト券をご送付させて頂く為にemailアドレスをご入力下さい
-								<input type="email" name="email"  maxlength="100">
+								<input type="email" name="email" class="question" maxlength="100">
 							</label>
 						</div>
 						<?php 
 							foreach ($questions as $key => $value) {
-								echo '<div>';
+								echo '<div class="items">';
 								echo '<label>';	
 								echo $questions[$key];
-								echo '<input type="text" name="answer';
+								echo '<input type="text" class="question" name="answer';
 								echo number_format($key) + 1 ;
 								echo '">';
 								echo '</label>';
+								echo '</div>';
 						}
 						?>
-						<div>
+						<div class="items">
 							<label>商品の感想を教えて下さい
-								<input type="text" name="feedback">
+								<input type="text" class="question" name="feedback">
 							</label>	
 						</div>
-						<div>
+						<div class="items">
 							<label>商品の満足度を選択してください</label>
-							<select name="rating">
+							<select name="rating" class="question">
 								<option>満足:★★★★★</option>
 								<option>良い:★★★★</option>
 								<option>普通:★★★</option>
@@ -84,8 +82,9 @@ $brandName = $tempa['brand'] ;
 						</div>
 					<input type="hidden" name="json" value="<?php echo $base64json ?>">
 					<input type="hidden" name="reviewed" value="">
-
-					<input type="submit" formaction="postdecision.php"  value="次へ">
+					<p class="formbottom">
+						<input type="submit" class="btns" formaction="postdecision.php"  value="次へ">
+					</p>
 				</form>
 			</div>
 		</div>

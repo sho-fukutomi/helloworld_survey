@@ -67,7 +67,9 @@ foreach ($responce as $key => $value) {
 					?>
 					</div>
 					<input type="hidden" name="json" value="<?php echo $brandName ?>">
-					<input type="submit" formaction="page3.php"  value="次へ">
+					<p class="formbottom">
+						<input type="submit" class="btns" formaction="page3.php"  value="次へ">
+					</p>
 				</form>
 			</div>
 		</div>

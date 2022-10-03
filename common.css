@@ -9,6 +9,7 @@ body {
 
 .container{
     width: 800px;
+    margin-top: 80px;
     margin-right: auto;
     margin-left: auto;
     text-size-adjust: 200%;
@@ -32,11 +33,12 @@ h2{
 
 form .formbottom {
     text-align: center;
+    margin: 20px;
 } 
 form .btns{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 20px;
+    margin: 30px;
     padding: 20px 30px;
     color: #F15A24;
     font-weight: bold;
@@ -50,16 +52,38 @@ form .btns{
     -moz-transition-duration:0.3s;
     -o-transition-duration:0.3s;
     -ms-transition-duration:0.3s;
+    width: 300px;
 } 
 form .btns:hover{
     color: #ffffff;
     background-color: #F15A24;
 }
 
+input[type="email" i] {
+    padding: 20px 30px;
+}
+
 input[type="text" i] {
     padding: 20px 30px;
-
 }
+input[type="radio"] {
+    font-size:x-large;
+    height:45px;
+    width:45px;
+}
+input[type="checkbox"] {
+    font-size:x-large;
+    height:45px;
+    width:45px;
+}
+select{
+    padding: 20px 30px;
+    width: -webkit-fill-available;
+}
+.question{
+    width: 90%;
+}
+
 .items{
     margin: 11px 10px 19px 10px;
 }

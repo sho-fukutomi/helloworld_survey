@@ -41,11 +41,11 @@ $brandText = $responce->homeText;
 			<div class="discriptions"><?php echo $brandText; ?></div>
 			<div class="survey">
 				<form method="post">
-					<div>	
+					<div class="items">	
 						<label>注文番号を入力してください。</label>
 					</div>
 					<div>
-						<input type="text" name="orderId" maxlength="20" value="" placeholder="000-000000-000000">
+						<input type="text" class="question" name="orderId" maxlength="20" value="" placeholder="000-000000-000000">
 					</div>
 					<input type="hidden" name="brand" value="<?php echo $brandName ?>">
 					<p class="formbottom">
