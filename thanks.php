@@ -99,6 +99,7 @@ $brandName = $otherinfo->brand;
 	</head>
 	<body>
 		<div class="container">
+			<h2>アンケートを受け付けました。</h2>
 			<div></div>
 			<div>アンケートへのご回答ありがとうございました。</div>
 			<div></div>
@@ -106,10 +107,6 @@ $brandName = $otherinfo->brand;
 			
 			
 			
-		</div>
-
-		<div>
-			<a href="http://localhost:8080/survey/page1.php?brand=hoge">でばっぐ</a>	
 		</div>
 	</body>
 </html>

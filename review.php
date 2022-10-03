@@ -35,17 +35,17 @@ $brandName = $otherinfo->brand;
 	<body>
 		<div class="container">
 			<div></div>
-			<div>レビュー投稿にご協力ください。</div>
+			<h2>レビュー投稿にご協力ください。</h2>
 			<div>レビューをよろしくお願いいたします。</div>
 			<div>投稿頂いた感想</div>
-			<div><?php echo $feedback; ?></div>
+			<div class="feedback"><?php echo $feedback; ?></div>
 			<div>を貼り付けていただくだけでも構いませんので、ご協力お願いいたします。</div>
 			<div class="reviewbtn">
 				<button class="jumpbtn" onclick="copy_jump()">レビュー投稿画面へ</button>
 			</div>
 			<div>別タブで遷移いたします。タップ時に感想をクリップボードにコピー致します。</div>
 			<form method="post">
-				<div><label>
+				<div class="items"><label>
 					<input type="checkbox" name="reviewed" value="reviewed">
 					レビューを投稿した
 				</label></div>	
