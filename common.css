@@ -20,7 +20,10 @@ h2{
     height: 4em;
     display: grid;
     align-items: center;
-    justify-content: center 
+    justify-content: center ;
+    /*width : 80%;*/
+    margin: 30px;
+    padding: 30px;
 }
 .survey{
     padding-top: 10px;
@@ -104,6 +107,9 @@ select{
     background-color: #ffa41c;
     border: 1px solid #FF8F00;
 }
+.feedback{
+    margin: 30px;
+    font-weight: bold;
 }
 
 
