@@ -1,9 +1,6 @@
 <?php 
 //PHPエリア、getの値を元に必要な情報を整理する
 
-
-
-
 //?brand=hogehoge を取得、空の場合は空欄にする
 if(!empty($_GET['brand'])){
 	$brand = $_GET['brand'];	
@@ -19,7 +16,11 @@ $brandInfoAPIURL =  $brandInfoAPI.$brand;
 $responce = json_decode(file_get_contents($brandInfoAPIURL));
 
 //取得したブランド名とブランドテキストを整形、HTMLで使いやすい変数に格納する
-$brandName = $responce->brand;
+if(!empty($responce->brand)){
+	$brandName = $responce->brand;	
+}else{
+	header('Location:error.php');
+}
 $homeTitle = $responce->homeTitle;
 $brandText = $responce->homeText;
 
