@@ -1,9 +1,5 @@
 <?php
 
-// var_dump($_POST);
-// var
-var_dump($_POST);
-var_dump(json_decode(base64_decode($_POST["json"])));
 $otherinfo = json_decode(base64_decode($_POST["json"]));
 
 if(!empty($_POST['answer1'])){
@@ -34,7 +30,7 @@ $brandName = $otherinfo->brand;
 	<head>
 		<meta charset="UTF-8">
 		<title><?php echo $brandName;?> </title>
-		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="common.css">	
 	</head>
 	<body>
 		<div class="container">
@@ -44,9 +40,8 @@ $brandName = $otherinfo->brand;
 			<div>投稿頂いた感想</div>
 			<div><?php echo $feedback; ?></div>
 			<div>を貼り付けていただくだけでも構いませんので、ご協力お願いいたします。</div>
-			<div>
-				<button>レビュー投稿画面へ-></button>
-				<a href="<?php echo $url ?>">投稿URL</a>	
+			<div class="reviewbtn">
+				<button class="jumpbtn" onclick="copy_jump()">レビュー投稿画面へ</button>
 			</div>
 			<div>別タブで遷移いたします。タップ時に感想をクリップボードにコピー致します。</div>
 			<form method="post">
@@ -68,14 +63,32 @@ $brandName = $otherinfo->brand;
 						echo '">';
 					}
 				 ?>
-				<input type="submit" formaction="thanks.php"  value="次へ">
+				 <p class="formbottom">
+					<input type="submit" class="btns" formaction="thanks.php"  value="次へ">
+				</p>
 			</form>
 			
-		</div>
-
-		<div>
-			<a href="http://localhost:8080/survey/page1.php?brand=hoge">でばっぐ</a>	
 		</div>
 	</body>
 </html>
 
+<script type="text/javascript">
+	console.log("<?php echo $url ?>");
+	function copy_jump(){
+    	
+    	var content = "<?php echo $feedback ?>";
+    	console.log(content)
+    	navigator.clipboard.writeText(content)
+        	.then(() => {
+        		console.log("Text copied to clipboard...")
+    		})
+        	.catch(err => {
+        		console.log('Something went wrong', err);
+    		})
+    		window.open('<?php echo $url ?>', '_blank');
+
+
+	}	
+
+
+</script>

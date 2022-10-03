@@ -1,7 +1,4 @@
 <?php 
-var_dump($_POST);
-
-
 $otherinfo = json_decode(base64_decode( $_POST['json']));
 $answers = $_POST;
 

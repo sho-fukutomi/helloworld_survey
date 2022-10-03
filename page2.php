@@ -73,8 +73,5 @@ foreach ($responce as $key => $value) {
 				</form>
 			</div>
 		</div>
-		<div>
-			<a href="http://localhost:8080/survey/page1.php?brand=hoge">でばっぐ</a>	
-		</div>
 	</body>
 </html>
