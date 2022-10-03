@@ -2,7 +2,7 @@
 //PHPエリア、getの値を元に必要な情報を整理する
 
 
-require('URL.php');
+
 
 //?brand=hogehoge を取得、空の場合は空欄にする
 if(!empty($_GET['brand'])){
@@ -12,6 +12,7 @@ if(!empty($_GET['brand'])){
 }
 
 //ブランド名を元にAPIコール用URLの生成
+require('URL.php');
 $brandInfoAPIURL =  $brandInfoAPI.$brand; 
 
 //APIコール、ブランド名とブランドテキストを取得
@@ -34,22 +35,24 @@ $brandText = $responce->homeText;
 		<link rel="stylesheet" href="common.css">
 	</head>
 	<body>
-		<div>
-			<div><?php echo $homeTitle; ?></div>
+		<div class="container">
+			<h2><?php echo $homeTitle; ?></h2>
 			<div></div>
-			<div><?php echo $brandText; ?></div>
-			<div>
+			<div class="discriptions"><?php echo $brandText; ?></div>
+			<div class="survey">
 				<form method="post">
-					<label>注文番号を入力してください。</label>
-					<input type="text" name="orderId" maxlength="20" value="" placeholder="000-000000-000000">
+					<div class="items">	
+						<label>注文番号を入力してください。</label>
+					</div>
+					<div>
+						<input type="text" class="question" name="orderId" maxlength="20" value="" placeholder="000-000000-000000">
+					</div>
 					<input type="hidden" name="brand" value="<?php echo $brandName ?>">
-					<input type="submit" formaction="page2.php"  value="次へ">
+					<p class="formbottom">
+						<input class="btns" type="submit" formaction="page2.php"  value="次へ">	
+					</p>
 				</form>
 			</div>
 		</div>
-		<div>
-			<a href="http://localhost:8080/survey/page1.php?brand=hoge">でばっぐ</a>	
-		</div>
-		
 	</body>
 </html>

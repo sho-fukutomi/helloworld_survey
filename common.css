@@ -2,6 +2,108 @@ body {
     background: #ffc1c1;
     background-image: url(harowa.png);
     background-size: initial;
+    font-family: Avenir, Yu Gothic,YuGothic,Hiragino Kaku Gothic ProN,Meiryo,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.container{
+    width: 800px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    text-size-adjust: 300%;
+    font-size: x-large;
 
 }
+h2{
+    height: 4em;
+    display: grid;
+    align-items: center;
+    justify-content: center 
+}
+.survey{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.discriptions{
+    color: #3c3939;
+    font-weight: bold;
+
+}
+
+
+form .formbottom {
+    text-align: center;
+    margin: 20px;
+} 
+form .btns{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px;
+    padding: 20px 30px;
+    color: #F15A24;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #F15A24;
+    cursor: pointer;
+    transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -moz-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+    width: 300px;
+} 
+form .btns:hover{
+    color: #ffffff;
+    background-color: #F15A24;
+}
+
+input[type="email" i] {
+    padding: 20px 30px;
+}
+
+input[type="text" i] {
+    padding: 20px 30px;
+}
+input[type="radio"] {
+    font-size:x-large;
+    height:45px;
+    width:45px;
+}
+input[type="checkbox"] {
+    font-size:x-large;
+    height:45px;
+    width:45px;
+}
+select{
+    padding: 20px 30px;
+    width: -webkit-fill-available;
+}
+.question{
+    width: 90%;
+}
+
+.items{
+    margin: 11px 10px 19px 10px;
+}
+.reviewbtn{
+    text-align: center;
+    margin: 20px;   
+}
+.jumpbtn{
+    height:200px;
+    width:500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px;
+    padding: 20px 30px;
+    color: 0F1111;
+    background-color: #ffa41c;
+    border: 1px solid #FF8F00;
+}
+}
+
+
