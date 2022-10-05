@@ -102,10 +102,12 @@ select{
     margin: 20px;   
 }
 .jumpbtn{
+    border-radius:20px; 
+
     font-size:x-large;
     font-size: 125%;
-    height:200px;
-    width:500px;
+    height:160px;
+    width:400px;
     display: inline-block;
     vertical-align: middle;
     margin: 30px;
