@@ -48,7 +48,7 @@ form .btns{
     padding: 20px 30px;
     color: #2fb5d1;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 125%;
     letter-spacing: 0.5pt;
     text-decoration: none;
     background-color: #ffffff;
@@ -75,12 +75,10 @@ input[type="text" i] {
     padding: 20px 30px;
 }
 input[type="radio"] {
-    font-size:x-large;
     height:45px;
     width:45px;
 }
 input[type="checkbox"] {
-    font-size:x-large;
     height:45px;
     width:45px;
 }
@@ -95,13 +93,17 @@ select{
 }
 
 .items{
-    margin: 11px 10px 19px 10px;
+    margin: 11px 10px 19px 10px;    
+    vertical-align: middle;
+
 }
 .reviewbtn{
     text-align: center;
     margin: 20px;   
 }
 .jumpbtn{
+    font-size:x-large;
+    font-size: 125%;
     height:200px;
     width:500px;
     display: inline-block;

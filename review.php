@@ -46,7 +46,7 @@ $brandName = $otherinfo->brand;
 			<div>別タブで遷移いたします。タップ時に感想をクリップボードにコピー致します。</div>
 			<form method="post">
 				<div class="items"><label>
-					<input type="checkbox" name="reviewed" value="reviewed">
+					<input type="checkbox" name="reviewed" class="items" value="reviewed">
 					レビューを投稿した
 				</label></div>	
 				<input type="hidden" name="email" value="<?php echo $_POST['email'] ?>">
