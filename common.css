@@ -1,6 +1,7 @@
 body {
-    background: #ffc1c1;
-    background-image: url(harowa.png);
+    background: #b5e6cf;
+    /*background-image: radial-gradient(at top, #b5e6cf, #9dddad);*/
+    /*background-image: url(harowa.png);*/
     background-size: initial;
     font-family: Avenir, Yu Gothic,YuGothic,Hiragino Kaku Gothic ProN,Meiryo,sans-serif;
     font-weight: 400;
@@ -24,6 +25,7 @@ h2{
     /*width : 80%;*/
     margin: 30px;
     padding: 30px;
+    text-align: center
 }
 .survey{
     padding-top: 10px;
@@ -45,12 +47,14 @@ form .btns{
     vertical-align: middle;
     margin: 30px;
     padding: 20px 30px;
-    color: #F15A24;
+    color: #2fb5d1;
     font-weight: bold;
+    font-size: 125%;
     letter-spacing: 0.5pt;
     text-decoration: none;
     background-color: #ffffff;
-    border: 1px solid #F15A24;
+    /*border: 1px solid #F15A24;*/
+    border: 2px solid #2fb5d1;
     cursor: pointer;
     transition-duration:0.3s;
     -webkit-transition-duration:0.3s;
@@ -61,7 +65,7 @@ form .btns{
 } 
 form .btns:hover{
     color: #ffffff;
-    background-color: #F15A24;
+    background-color: #008583;
 }
 
 input[type="email" i] {
@@ -72,12 +76,10 @@ input[type="text" i] {
     padding: 20px 30px;
 }
 input[type="radio"] {
-    font-size:x-large;
     height:45px;
     width:45px;
 }
 input[type="checkbox"] {
-    font-size:x-large;
     height:45px;
     width:45px;
 }
@@ -87,18 +89,26 @@ select{
 }
 .question{
     width: 90%;
+    font-size: 200%;
+    border: 2px solid #2fb5d1;
 }
 
 .items{
-    margin: 11px 10px 19px 10px;
+    margin: 11px 10px 19px 10px;    
+    vertical-align: middle;
+
 }
 .reviewbtn{
     text-align: center;
     margin: 20px;   
 }
 .jumpbtn{
+    border-radius:20px; 
+
+    font-size:x-large;
+    font-size: 125%;
     height:200px;
-    width:500px;
+    width:400px;
     display: inline-block;
     vertical-align: middle;
     margin: 30px;
