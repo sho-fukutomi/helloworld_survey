@@ -37,7 +37,7 @@ $brandText = $responce->homeText;
 	</head>
 	<body>
 		<div class="container">
-			<h2><?php echo $homeTitle; ?></h2>
+			<h2 text-align: center><?php echo $homeTitle; ?></h2>
 			<div></div>
 			<div class="discriptions"><?php echo $brandText; ?></div>
 			<div class="survey">

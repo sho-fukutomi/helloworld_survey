@@ -25,6 +25,7 @@ h2{
     /*width : 80%;*/
     margin: 30px;
     padding: 30px;
+    text-align: center
 }
 .survey{
     padding-top: 10px;
@@ -106,7 +107,7 @@ select{
 
     font-size:x-large;
     font-size: 125%;
-    height:160px;
+    height:200px;
     width:400px;
     display: inline-block;
     vertical-align: middle;
